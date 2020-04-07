@@ -1,0 +1,151 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.5, 1 December 2018) written by
+% Neeraj Giri (giri492neeraj@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{5DADE2}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+
+\name{Amjad Shomali}
+%\tagline{Software and Data enthusiast}
+\tagline{4th Year Computer Engineer Undergraduate }
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%\photo{2.5cm}{neerajpc}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{amjadshomali60@gmail.com}
+    \phone{0595155929}
+  \location{Palestine, Bethlehem}
+    
+ %  \linkedin{www.codechef.com/users/howkeye}
+  %   \github{github.com/howkeye} 
+    
+   
+
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Education}
+
+\edu{Bachelor of Engineering}{Birzeit University}{2016 -- Present}{GPA: 77.6}
+
+\edu{ Tawjihi }{Latin Patrichate School Beitsahour}{2016}
+
+
+\cvsection{Technical Skills}
+\normalsize\cvtag{C/C++}
+\cvtag{Java}
+\cvtag{Python}
+\cvtag{React}
+\cvtag{PHP}
+\cvtag{MySql/MongoDB}
+\cvtag{HTML}
+\cvtag{CSS}
+\cvtag{Bash}
+\cvtag{Verilog}
+\cvtag{Git}
+
+
+\cvsection{Personal Skills}
+\begin{itemize}
+\item \linespread{1.4} \large Problem-Solving
+\item Fast Learning
+\item Active listening
+\item Dependable \& Very Helpful Teammate
+\item Tinkerer/Curious Mind
+\item Proficient coding workflow 
+\end{itemize}
+
+\cvsection{PROJECTS}
+
+\cvsubsection{Web Development}
+ Created a handful of \textbf{personal} websites in various languages and frameworks including the names:
+\begin{itemize}
+\item NodeJS
+\item Express
+\item React
+\item PHP
+\item Bootstrap
+\item Vanilla sites (HTML/CSS)
+\end{itemize}
+
+\divider
+
+\cvsubsection{University Projects}
+\begin{itemize}
+\item  Countless university projects were created, ones worthy of mention can be found here \newline
+\url{https://github.com/majestrix/University_Projects}
+\end{itemize}
+\divider
+
+\clearpage
+
+\end{document}
